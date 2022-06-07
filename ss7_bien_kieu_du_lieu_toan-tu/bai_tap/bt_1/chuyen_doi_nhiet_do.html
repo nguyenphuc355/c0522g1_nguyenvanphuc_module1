@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <table>
+            <tr>
+                <td><span>input °C</span></td>
+
+                <td><input type="number " id="A"><br></td>
+            </tr>
+             <tr>
+                <td><button type="button" id="B" onclick="add()">convert</button></td>
+                <td>
+                <span id="123">:</span>
+
+                <span id="abc"></span>
+            </td>
+
+    </table>
+
+    <script>
+        function add(){
+        var đoC =document.getElementById("A").value;
+
+        var đoF = (9 * parseInt(đoC))/5 + 32;
+        document.getElementById("abc").innerText = đoF;
+        }
+        /*c = prompt("nhập độ C: ")
+        let f = (9 * parseInt(c))/5 + 32;
+        document.write(f);
+        alert("Độ f = " + f);*/
+
+    </script>
+
+</body>
+</html>

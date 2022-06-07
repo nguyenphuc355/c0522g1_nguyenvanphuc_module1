@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>điểm vật lý:</td>
+            <td><input type="number" id="A"></td>
+        </tr>
+        <tr>
+            <td>điểm hóa học:</td>
+            <td><input type="number" id="B"></td>
+        </tr>
+        <tr>
+            <td>điểm sinh học:</td>
+            <td><input type="number" id="C"></td>
+        </tr>
+        <tr >
+            <td>
+                <button onclick="add()">enter</button>  tổng:
+                <span id="result"></span>
+            </td>
+            <td></td>
+                <td>
+                <span>Điểm tb:</span>
+                <span id="D"></span>
+            </td>
+
+        </tr>
+    </table>
+    <script>
+        function add() {
+            let physics = document.getElementById("A").value;
+            let chemistry = document.getElementById("B").value;
+            let disciple = document.getElementById("C").value;
+            let result = parseInt(physics) + parseInt(chemistry) + parseInt(disciple);
+            document.getElementById("result"). innerText = result;
+            let medium = (parseInt(physics) + parseInt(chemistry) + parseInt(disciple))/3;
+            document.getElementById("D").innerText = medium;
+
+        }
+        /* a = prompt("điểm vật lý: ");
+        b = prompt("điểm hóa học: ");
+        c = prompt("điểm sinh học: ");
+        let sum = parseInt(a) + parseInt(b) + parseInt(c);
+        alert('tổng = ' + sum);
+        document.write(sum);
+        let medium = (parseInt(a) + parseInt(b) + parseInt(c))/3;
+        alert("điểm tb = " + medium);
+        document.write('<br>');
+        document.write(medium); */
+
+    </script>
+
+</body>
+</html>

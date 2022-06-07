@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="2"><input type="number" id="1"></td>
+            <td colspan="2"><input type="number" id="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><button  onclick="add()">Addition(+)</button></td>
+            <td><button  onclick="sub()">Subtruction(-)</button></td>
+            <td><button  onclick="mul()">Multiplication(x)</button></td>
+            <td><button  onclick="div()">division(/)</button></td>
+        </tr>
+    </table>
+        <table>
+        <tr>
+            <th>
+                <span>Result</span>
+                <span id="3"></span>
+            </th>
+        </tr>
+    </table>
+<script>
+
+    function add() {
+        let numbera = document.getElementById("1").value;
+        let numberb = document.getElementById("2").value;
+        let sum = parseInt(numbera) + parseInt(numberb);
+        document.getElementById("3").innerHTML ="Addition: " + sum;
+    }
+    function sub() {
+        let numbera = document.getElementById("1").value;
+        let numberb = document.getElementById("2").value;
+        let sub = parseInt(numbera) - parseInt(numberb);
+        document.getElementById("3").innerHTML ="Subtruction: " + sub;
+
+    }
+    function mul() {
+        let numbera = document.getElementById("1").value;
+        let numberb = document.getElementById("2").value;
+        let mul = parseInt(numbera) * parseInt(numberb);
+        document.getElementById("3").innerHTML ="Multiplication: " + mul;
+
+    }
+    function div() {
+        let numbera = document.getElementById("1").value;
+        let numberb = document.getElementById("2").value;
+        let div = parseInt(numbera) / parseInt(numberb);
+        document.getElementById("3").innerHTML ="division: " + div;
+    }
+</script>
+
+</body>
+</html>
