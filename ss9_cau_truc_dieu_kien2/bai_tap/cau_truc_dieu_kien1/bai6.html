@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("doanh thu bán hàng");
+     if (a <= 300000){
+         document.write("hoa hồng: " + (a * 3 / 100));
+     }else if(a <= 500000){
+         document.write("hoa hồng:" + (a * 4 / 100));
+     }else {
+         document.write("hoa hồng:" + [(300000 *3 /100) + ((500000 - 300000)* 4 / 100)+((a - 500000)*6/100)]);
+     }
+</script>
+
+</body>
+</html>

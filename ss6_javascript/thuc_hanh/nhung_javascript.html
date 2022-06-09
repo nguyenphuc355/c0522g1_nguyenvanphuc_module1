@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
-<body>
-$END$
-</body>
+    <body>
+        <span id="123"></span><br>
+    <button id="abc" type="button" onclick="showmessage();">click me</button>
+
+    <script>
+        function showmessage() {
+            document.getElementById("123").innerHTML = "xin chào";
+        }
+    </script>
+    </body>
 </html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1" cellspacing="0">
+    <tr>
+        <td colspan="4"><input placeholder="0"type="text" id="result"></td>
+    </tr>
+    <tr>
+        <th><button type="text"  value="(" id="(" onclick="display1('(')">(</button> </th>
+        <th><button type="text" value=")" id=")" onclick="display2(')')">)</button> </th>
+        <th><button type="text" value="%" id="%" onclick="display3('%')">%</button> </th>
+        <th><button type="text" value="clear" id="clear" onclick="display4()" style="background: #ff0026"> AC </button> </th>
+    </tr>
+    <tr>
+        <th><button type="text" value="7" id="7" onclick="display5('7')">7</button> </th>
+        <th><button type="text" value="8" id="8" onclick="display6('8')">8</button> </th>
+        <th><button type="text" value="9" id="9" onclick="display7('9')">9</button> </th>
+        <th><button type="text" value="/" id="/" onclick="display8('/')">/</button> </th>
+    </tr>
+    <tr>
+        <th><button type="text" value="4" id="4" onclick="display9('4')">4</button> </th>
+        <th><button type="text" value="5" id="5" onclick="display10('5')">5</button> </th>
+        <th><button type="text" value="6" id="6" onclick="display11('6')">6</button> </th>
+        <th><button type="text" value="*" id="x" onclick="display12('*')">x</button> </th>
+    </tr>
+    <tr>
+        <th><button type="text" value="1" id="1" onclick="display13('1')">1</button> </th>
+        <th><button type="text" value="2" id="2" onclick="display14('2')">2</button> </th>
+        <th><button type="text" value="3" id="3" onclick="display15('3')">3</button> </th>
+        <th><button type="text" value="-" id="-" onclick="display16('-')">-</button> </th>
+    </tr>
+    <tr>
+        <th><button type="text" value="0" id="0" onclick="display17('0')">0</button> </th>
+        <th><button type="text" value="." id="." onclick="display18('.')">.</button> </th>
+        <th><button type="text" value="=" id="=" onclick="display19('=')" style="background: #00ff37">=</button> </th>
+        <th><button type="text" value="+" id="+" onclick="display20('+')">+</button> </th>
+    </tr>
+</table>
+    <script>
+        function display1(value) {
+            document.getElementById("result").value += value;
+        }function display2(value) {
+            document.getElementById("result").value += value;
+        }function display3(value) {
+            document.getElementById("result").value += value;
+        }function display4(value) {
+            document.getElementById("result").value ="";
+        }function display5(value) {
+            document.getElementById("result").value += value;
+        }function display6(value) {
+            document.getElementById("result").value += value;
+        }function display7(value) {
+            document.getElementById("result").value += value;
+        }function display8(value) {
+            document.getElementById("result").value += value;
+        }function display9(value) {
+            document.getElementById("result").value += value;
+        }function display10(value) {
+            document.getElementById("result").value += value;
+        }function display11(value) {
+            document.getElementById("result").value += value;
+        }function display12(value) {
+            document.getElementById("result").value += value;
+        }function display13(value) {
+            document.getElementById("result").value += value;
+        }function display14(value) {
+            document.getElementById("result").value += value;
+        }function display15(value) {
+            document.getElementById("result").value += value;
+        }function display16(value) {
+            document.getElementById("result").value += value;
+        }function display17(value) {
+            document.getElementById("result").value += value;
+        }function display18(value) {
+            document.getElementById("result").value += value;
+        }function display19(value) {
+            let a = document.getElementById("result").value;
+            let b = eval(a)
+            document.getElementById("result").value = b;
+        }function display20(value) {
+            document.getElementById("result").value += value;
+        }
+    </script>
+
+
+
+
+</body>
+</html>
