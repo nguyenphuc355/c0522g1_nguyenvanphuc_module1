@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let seed1 = 0;
+    let seed2 = 1;
+    let seed3;
+    let str = seed1 + ", " + seed2;
+    for(let i = 1; i <= 20; i++){
+        seed3 = seed1 + seed2;
+        str += ", " + seed3;
+        seed1 = seed2;
+        seed2 = seed3;
+    }
+    document.write(str);
+
+    // let f=0;
+    // let f0=0;
+    // let f1=0;
+    // let fibonaci="";
+    // for (let i=0;i<20;i++){
+    //     if(i==0){
+    //         f=1,f1=1,fibonaci+=f+""
+    //     }else {
+    //         f = f0+f1,f0=f1,f1=f,
+    //             fibonaci+= f+""
+    //         console.log(i+"="+f)
+    //     }
+    // }document.write(fibonaci);
+</script>
+</body>
+</html>

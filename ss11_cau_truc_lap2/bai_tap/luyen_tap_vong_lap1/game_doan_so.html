@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="clickme()">start</button>
+<script>
+    function clickme() {
+        let phamvi = Number(prompt("Trò chơi đoán số từ 0 - "));
+        let nhapso = Number(prompt("Nhập vào số muốn đoán"));
+        let soRamdom;
+        let count = 0;
+        if (phamvi) {
+            soRamdom = Math.floor(Math.random() * phamvi);
+            if (soRamdom == nhapso) {
+                alert("Bạn đã đoán đúng");
+            } else {
+                while (soRamdom != nhapso) {
+                    count++;
+                    if (count == 3) {
+                        alert("Bạn hết số lần đoán");
+                        break;
+                    }
+                    alert("Bạn đoán sai");
+                    nhapso = Number(prompt("Nhập vào số muốn đoán"));
+                }
+            }
+            alert("bạn đoán đúng");
+        }
+    }
+</script>
+
+</body>
+</html>

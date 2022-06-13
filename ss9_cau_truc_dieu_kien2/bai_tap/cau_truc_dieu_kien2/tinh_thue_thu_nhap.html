@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let coin = prompt("nhập số tiền");
+    if (coin <= 5000000){
+        document.write("thuế phải đóng: "+(coin * 5/100));
+    }else if (coin <=18000000){
+        document.write("thuế phải đóng: "+ (coin * 10/100));
+    }else{
+        document.write("thuế phải đóng là: "+ (coin * 15/100));
+    }
+
+
+</script>
+</body>
+</html>
