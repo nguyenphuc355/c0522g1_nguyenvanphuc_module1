@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = prompt("nhập phần tử mảng");
+    }
+    let v = parseInt(prompt("nhập V"));
+    let index = -1;
+    for (let i = 0; i < arr.length; i++) {
+        if (v == arr[i]) {
+            index = i;
+        }
+    }
+    if (index != -1) {
+        for (let i = index; i < arr.length; i++) {
+          arr[i]=arr[i+1];
+        }
+        arr[arr.length-1]=0;
+    }else {
+        alert("not found V");
+    }
+    document.write(arr);
+</script>
+</body>
+</html>

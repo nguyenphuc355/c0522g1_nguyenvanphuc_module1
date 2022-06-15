@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let strA = prompt("input string 1");
+    let strB = prompt("input string 2");
+    let count = 0;
+    if (strA.length === strB.length) {
+        for (let i = 0; i < strA.length; i++) {
+            if (strA[i] === strB[i]) {
+                count++;
+            }
+        }
+        if (count === strA.length) {
+            alert("2 Chuỗi giống nhau");
+        } else {
+            alert("2 chuỗi không giống nhau");
+        }
+    } else {
+        alert("2 Chuỗi không giống nhau");
+    }
+</script>
+</body>
+</html>

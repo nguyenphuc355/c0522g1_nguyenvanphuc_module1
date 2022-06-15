@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let text = prompt("input text");
+    let arr = [];
+    for (let i = 0; i < text.length; i++) {
+        arr[i] = text[i];
+    }
+    let upper = ["A", "B", "C", "D", "E", "F", "G", 'H', 'I', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'J', 'V', 'X', 'Y', 'Z', 'W'];
+    let lower = ["a", 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', "j", 'v', 'x', 'y', 'z', "w"];
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < upper.length; j++) {
+            if (arr[i] === upper[j]) {
+                arr[i] = lower[j];
+            } else if (arr[i] === lower[j]) {
+                arr[i] = upper[j];
+            }
+        }
+    }
+    document.write(arr);
+</script>
+</body>
+</html>

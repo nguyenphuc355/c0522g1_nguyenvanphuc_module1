@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let number = prompt("input number");
+    let prime =0;
+    let divisor = 0;
+    for (let i=2;i<1000;i++){
+        if(prime<number){
+            for (let j=1;j <=i;j++){
+                if (i % j==0){
+                    divisor +=1;
+                }
+            }if ( divisor==2){
+                document.write(i+"<br>");
+                prime++;
+            }
+            divisor = 0;
+        }else {
+            break;
+        }
+    }
+</script>
 </body>
 </html>

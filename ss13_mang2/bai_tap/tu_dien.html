@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+Nhập từ:
+<input type="text" id="tudien">
+<button onclick="dich()">Dịch</button>
+<p id="result"></p>
+<script>
+    function dich() {
+        let arrEn = ["banana", "apple", "orange", "mango", "lemon"];
+        let arrVie = ["chuối", "táo", "cam", "xoài", "chanh"];
+        let string = document.getElementById("tudien").value;
+        let index = 0;
+        let result = "";
+        for (let i = 0; i < arrEn.length; i++) {
+            if (string == arrEn[i]) {
+                index == i;
+                for (let j = 0; j < arrVie.length; j++) {
+                    if (index == j) {
+                        result = arrVie[j];
+                    }
+                }
+            }
+            document.getElementById("result").innerHTML = result;
+        }
+
+    }
+</script>
+</body>
+</html>

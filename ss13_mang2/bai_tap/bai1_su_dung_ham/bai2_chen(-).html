@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let number = prompt("input number");
+        let arr = [number[0]];
+        for(let i=0;i<number.length;i++){
+            if( number[i]%2==0&&number[i+1]%2==0){
+                arr.push("-",number[i+1]);
+            }else {
+                arr.push(number[i+1]);
+            }
+        }document.write(arr.join(""));
+    </script>
+</body>
+</html>

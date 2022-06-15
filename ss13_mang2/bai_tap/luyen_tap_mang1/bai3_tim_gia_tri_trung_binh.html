@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span id="result"></span>
+<script>
+    let number = parseInt(prompt("độ dài mảng:"));
+    let value = [];
+    let sum = 0;
+    let medium;
+    for (let i = 0; i < number; i++) {
+        value[i] = parseInt(prompt("nhập phần tử mảng"));
+    }
+    let max = value[0];
+    for (let i = 0; i < value.length; i++) {
+        if (value[i] > max) {
+            max = value[i];
+        }
+        sum += value[i];
+    }
+    medium = sum / number;
+    document.write("max là:" + max + "<br>")
+    document.write("medium:" + medium);
+</script>
+</body>
+</html>
