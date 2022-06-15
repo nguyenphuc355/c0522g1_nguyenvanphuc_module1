@@ -11,24 +11,25 @@ Nhập từ:
 <button onclick="dich()">Dịch</button>
 <p id="result"></p>
 <script>
-    function dich() {
-        let arrEn = ["banana", "apple", "orange", "mango", "lemon"];
-        let arrVie = ["chuối", "táo", "cam", "xoài", "chanh"];
-        let string = document.getElementById("tudien").value;
-        let index = 0;
-        let result = "";
-        for (let i = 0; i < arrEn.length; i++) {
-            if (string == arrEn[i]) {
-                index == i;
-                for (let j = 0; j < arrVie.length; j++) {
-                    if (index == j) {
-                        result = arrVie[j];
-                    }
-                }
-            }
-            document.getElementById("result").innerHTML = result;
-        }
+    let array = ["apple", "banana","mango","orange"];
+    let array2 = ["táo", "chuối","xoài","cam"];
+    let vietnamESE = "";
 
+    function dich() {
+        let english = document.getElementById("tudien").value;
+        let i = 0;
+
+        for (; i < array.length; i++) {
+            if (english === array[i]) {
+                vietnamESE = array2[i];
+                break;
+            }
+        }
+        if (i === array.length) {
+            alert("không tìm thấy");
+        } else {
+            document.getElementById("result").innerHTML = vietnamESE;
+        }
     }
 </script>
 </body>
