@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function timMin() {
+        let min = mangSo[0];
+        for (let i = 0; i < mangSo.length; i++) {
+            if (mangSo[i] < min) {
+                min = mangSo[i];
+            }
+        }
+        return min;
+    }
+    let mangSo = [];
+    for (let i = 0; i < 3; i++) {
+        mangSo.push(prompt("Nhập vào mảng số thứ " + i));
+    }
+    document.write("min = " + timMin());
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function giaiThua() {
+        let giaiThua = 1;
+        if (so > 1) {
+            for (let i = 1; i <= so; i++) {
+                giaiThua = giaiThua * i;
+            }
+        } else if (so == 0 || so == 1) {
+            giaiThua = 1;
+        } else {
+            return "giai thừa không xác định";
+        }
+        return giaiThua;
+    }
+
+    let so = parseInt(prompt("nhập số"));
+    document.write("giai thừa của " + so + " = " + giaiThua());
+</script>
+</body>
+</html>

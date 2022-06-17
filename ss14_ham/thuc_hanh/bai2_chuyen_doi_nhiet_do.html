@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Fahrenheit<input type="number" id="nhietdo" oninput="chuyendoi(this.value)"
+       onchange="chuyendoi(this.value)">°F
+<p>celsius:<span id="dauradoC"></span></p>
+
+<script>
+    function chuyendoi(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("dauradoC").innerHTML = (valNum-32)/1.8+" °C";
+    }
+</script>
+</body>
+</html>

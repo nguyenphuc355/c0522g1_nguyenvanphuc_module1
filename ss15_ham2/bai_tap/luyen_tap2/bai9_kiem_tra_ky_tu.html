@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let length = prompt("nhập chiều dài mảng");
+    let array = [];
+    for (let i = 0; i < length; i++) {
+        array[i] = prompt("nhập gái trị vào mảng");
+
+    }
+    let input = prompt("nhập vào kí tự bất kì");
+    let index = 0;
+
+    function myFunction(input) {
+        for (let i = 0; i < array.length; i++) {
+            if (input == array[i]) {
+                index += 1;
+            }
+        }
+    }
+    myFunction(input);
+    if (index > 0) {
+        document.write("số lần xuất hiện là của  " + input + " là " + index + " lần ");
+    } else {
+        document.write("-1");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [2, 3, 3, 4, 5, 77, 8, 534, 1, 0, 323, 24, 32432, 32, 332, 532, 5, 235, 32, 5];
+    min();
+    function min() {
+        let min = arr[0];
+        let index = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+                index = i;
+            }
+        }
+        document.write("min = " + min + " found at " + index);
+    }
+</script>
+</body>
+</html>

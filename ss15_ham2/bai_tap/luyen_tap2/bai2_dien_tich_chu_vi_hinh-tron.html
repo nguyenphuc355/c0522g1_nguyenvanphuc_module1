@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function hinhTron() {
+        let result;
+        let chuVi = r * 2 * 3.14;
+        let dienTich = r * r * 3.14;
+        result = "chu vi hình tròn là: " + chuVi + '<br>' +
+            "diện tích hình tròn là: " + dienTich;
+        return result;
+    }
+
+    let r = parseInt(prompt("nhập bán kính"));
+    document.write(hinhTron());
+</script>
+</body>
+</html>
