@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(doC) {
+            this.doC = doC;
+        }
+
+        getDoC() {
+            return this.doC;
+        }
+
+        getDoF() {
+            return (this.doC * 9) / 5 + 32;
+        }
+
+        getDokelvin() {
+            return this.doC + 273.15;
+        }
+    }
+
+    let temperature = new Temperature(25);
+    temperature.getDoF();
+    temperature.getDokelvin()
+    document.write("°F = " + temperature.getDoF() + "<br>" + "°K =" + temperature.getDokelvin());
+</script>
+</body>
+</html>
