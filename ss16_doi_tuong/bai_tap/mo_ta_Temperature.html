@@ -19,14 +19,14 @@
             return (this.doC * 9) / 5 + 32;
         }
 
-        getDokelvin() {
+        getDoKelvin() {
             return this.doC + 273.15;
         }
     }
 
     let temperature = new Temperature(25);
     temperature.getDoF();
-    temperature.getDokelvin()
+    temperature.getDoKelvin()
     document.write("°F = " + temperature.getDoF() + "<br>" + "°K =" + temperature.getDokelvin());
 </script>
 </body>
