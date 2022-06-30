@@ -7,8 +7,8 @@
 <body>
 <script>
     let arr=[2,3,43,54,65,67,343,445,787,8];
-    for (let i=0;i<arr.length-1;i++){
-        for (let j=0;j<arr.length;j++){
+    for (let i=0;i<arr.length;i++){
+        for (let j=0;j<=i;j++){
             if(arr[j]<arr[j+1]){
                 let tam = arr[j];
                 arr[j] = arr[j+1];
